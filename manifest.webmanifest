@@ -1,6 +1,6 @@
 {
-  "name": "Best Price — Unit Price Comparator",
-  "short_name": "Best Price",
+  "name": "Price Compare — Unit Price Comparator",
+  "short_name": "Price Compare",
   "description": "Compare the unit price of up to four products.",
   "start_url": "./",
   "scope": "./",

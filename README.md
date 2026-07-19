@@ -1,4 +1,4 @@
-# Best Price
+# Price Compare
 
 A standalone, installable unit-price comparison PWA. It compares up to four items using:
 

@@ -1,4 +1,4 @@
-const CACHE_NAME = 'best-price-v1';
+const CACHE_NAME = 'price-compare-v2';
 const APP_FILES = ['./', './index.html', './styles.css', './app.js', './manifest.webmanifest', './icons/icon-192.svg', './icons/icon-512.svg'];
 
 self.addEventListener('install', (event) => {
