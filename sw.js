@@ -1,5 +1,15 @@
-const CACHE_NAME = 'price-compare-v4';
-const APP_FILES = ['./', './index.html', './styles.css', './app.js', './manifest.webmanifest', './icons/icon-192.svg', './icons/icon-512.svg'];
+const CACHE_NAME = 'price-compare-v5';
+const APP_FILES = [
+  './',
+  './index.html',
+  './styles.css',
+  './app.js',
+  './manifest.webmanifest',
+  './icons/price-compare-192.png',
+  './icons/price-compare-512.png',
+  './icons/apple-touch-icon.png',
+  './icons/favicon-32.png'
+];
 
 self.addEventListener('install', (event) => {
   event.waitUntil(caches.open(CACHE_NAME).then((cache) => cache.addAll(APP_FILES)));
