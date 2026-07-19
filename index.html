@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="theme-color" content="#173c35" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="Best Price" />
+    <meta name="description" content="Compare the unit price of up to four products." />
+    <link rel="manifest" href="manifest.webmanifest" />
+    <link rel="apple-touch-icon" href="icons/icon-192.svg" />
+    <link rel="icon" href="icons/icon-192.svg" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Best Price</title>
+  </head>
+  <body>
+    <main class="app">
+      <header class="hero">
+        <p class="eyebrow">SHOP SMARTER</p>
+        <h1>Best Price</h1>
+        <p>Enter each item's price and quantity. The lowest price per unit wins.</p>
+      </header>
+
+      <section class="comparison" aria-label="Unit price comparison">
+        <div class="column-headings" aria-hidden="true">
+          <span>Price</span><span></span><span>Quantity</span><span></span><span>Result</span>
+        </div>
+        <div id="rows"></div>
+      </section>
+
+      <div class="actions">
+        <button id="clear-all" type="button">Clear all</button>
+      </div>
+      <p class="privacy">Your entries stay on this device.</p>
+    </main>
+
+    <template id="item-row-template">
+      <article class="item-row">
+        <div class="item-title">
+          <span class="item-number"></span>
+          <span class="best-badge">BEST VALUE</span>
+        </div>
+        <div class="formula">
+          <label>
+            <span>Price</span>
+            <span class="input-wrap price-wrap">
+              <span class="currency" aria-hidden="true">$</span>
+              <input class="price" type="number" min="0" step="0.01" inputmode="decimal" placeholder="0.00" />
+            </span>
+          </label>
+          <span class="operator" aria-hidden="true">÷</span>
+          <label>
+            <span>Quantity</span>
+            <input class="quantity" type="number" min="0" step="any" inputmode="decimal" placeholder="0" />
+          </label>
+          <span class="operator" aria-hidden="true">=</span>
+          <output class="result" aria-live="polite">—</output>
+        </div>
+      </article>
+    </template>
+
+    <script src="app.js" defer></script>
+  </body>
+</html>
