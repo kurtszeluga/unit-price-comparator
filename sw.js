@@ -1,4 +1,4 @@
-const CACHE_NAME = 'price-compare-v5';
+const CACHE_NAME = 'price-compare-v6';
 const APP_FILES = [
   './',
   './index.html',

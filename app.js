@@ -70,7 +70,7 @@ rowsContainer.addEventListener('input', calculate);
 clearButton.addEventListener('click', () => {
   document.querySelectorAll('input').forEach((input) => { input.value = ''; });
   calculate();
-  document.querySelector('.price').focus();
+  clearButton.blur();
 });
 
 calculate();
